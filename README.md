@@ -3,11 +3,11 @@ Send the headers and body of an HTTP request to a Pub/Sub topic with Google Clou
 
 ## Deploying to Google Cloud Functions
 ```
-gcloud beta functions deploy http-to-pubsub 
-    --region=europe-west1
-    --runtime=python37
-    --entry-point=F
-    --trigger-http
+gcloud beta functions deploy http-to-pubsub \
+    --region=europe-west1 \
+    --runtime=python37 \
+    --entry-point=F \
+    --trigger-http \
     --set-env-vars PUBSUB_TOPIC_PATH=[YOUR_PUBSUB_TOPIC_PATH]
 ```
 
